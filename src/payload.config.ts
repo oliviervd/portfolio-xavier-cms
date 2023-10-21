@@ -1,5 +1,5 @@
-import {cloudStorage} from "@payloadcms/plugin-cloud-storage";
-import {s3Adapter} from "@payloadcms/plugin-cloud-storage/s3";
+import { cloudStorage } from "@payloadcms/plugin-cloud-storage";
+import { s3Adapter } from "@payloadcms/plugin-cloud-storage/s3";
 import path from "path";
 
 import { payloadCloud } from "@payloadcms/plugin-cloud";
@@ -9,14 +9,18 @@ import { slateEditor } from "@payloadcms/richtext-slate";
 import { buildConfig } from "payload/config";
 
 import Users from "./collections/Users";
+import Media from "./collections/Media";
 
 export default buildConfig({
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
   },
+  db: mongooseAdapter({
+    url: process.env.DATABASE_URI,
+  }), // or postgresAdapter({}),
   editor: slateEditor({}),
-  collections: [Users],
+  collections: [Users, Media],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
@@ -40,14 +44,10 @@ export default buildConfig({
           }),
         },
       },
-    }), 
-    db: mongooseAdapter({
-      url: process.env.DATABASE_URI
-    })
+    }),
   ],
   serverURL: process.env.PAYLOAD_URL,
   // CORS
   cors: ["http://localhost:3000", "https://p02--admin--wjrlktvqwrfv.code.run/"],
   csrf: ["http://localhost:3000", "https://p02--admin--wjrlktvqwrfv.code.run/"],
-
 });
