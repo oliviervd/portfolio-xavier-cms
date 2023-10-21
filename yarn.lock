@@ -1315,6 +1315,13 @@
     prompts "2.4.2"
     uuid "9.0.0"
 
+"@payloadcms/plugin-cloud-storage@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@payloadcms/plugin-cloud-storage/-/plugin-cloud-storage-1.1.1.tgz"
+  integrity sha512-WFqfZcT7R1LD+FfKKKYNsJPDRE+0VlYEMxzGuPKeUQn9w9sqTy2UD01YCEl0Zcyuq8fD9mRUjeLitSo1aAUimQ==
+  dependencies:
+    range-parser "^1.2.1"
+
 "@payloadcms/plugin-cloud@^2.0.0":
   version "2.2.5"
   resolved "https://registry.npmjs.org/@payloadcms/plugin-cloud/-/plugin-cloud-2.2.5.tgz"
@@ -5655,7 +5662,7 @@ pause@0.0.1:
   resolved "https://registry.npmjs.org/pause/-/pause-0.0.1.tgz"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-"payload@^1.8.2 || ^2.0.0", payload@^2.0.0, payload@^2.0.6:
+"payload@^1.7.2 || ^2.0.0", "payload@^1.8.2 || ^2.0.0", payload@^2.0.0, payload@^2.0.6:
   version "2.0.11"
   resolved "https://registry.npmjs.org/payload/-/payload-2.0.11.tgz"
   integrity sha512-MFrEod5BnYCloHQ4f6ZzM+xzSAVo5qQFHf/aIkUGu0dJTCvFk/p6rNjqG/CrWVER0nB5RwHR5YLlBpdQhQRYHQ==
