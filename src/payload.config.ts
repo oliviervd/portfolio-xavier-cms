@@ -51,6 +51,6 @@ export default buildConfig({
   ],
   serverURL: process.env.PAYLOAD_URL,
   // CORS
-  cors: ["http://localhost:3000", "https://p02--admin--wjrlktvqwrfv.code.run/"],
-  csrf: ["http://localhost:3000", "https://p02--admin--wjrlktvqwrfv.code.run/"],
+  cors: ["http://localhost:3000", "https://p01--admin--jh7ls6pxcdjh.code.run/"],
+  csrf: ["http://localhost:3000", "https://p01--admin--jh7ls6pxcdjh.code.run/"],
 });
