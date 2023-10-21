@@ -10,6 +10,9 @@ import { buildConfig } from "payload/config";
 
 import Users from "./collections/Users";
 import Media from "./collections/Media";
+import People from "./collections/People";
+import Project from "./collections/Projects";
+import Tags from "./collections/Tags";
 
 export default buildConfig({
   admin: {
@@ -20,7 +23,7 @@ export default buildConfig({
     url: process.env.DATABASE_URI,
   }), // or postgresAdapter({}),
   editor: slateEditor({}),
-  collections: [Users, Media],
+  collections: [Users, Media, People, Project, Tags],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
