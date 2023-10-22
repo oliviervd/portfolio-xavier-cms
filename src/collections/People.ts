@@ -14,7 +14,7 @@ const People: CollectionConfig = {
   fields: [
     {
       name: "firstName",
-      label: "first name",
+      label: "first name (use only this when organisation)",
       type: "text",
       required: true,
     },
@@ -22,7 +22,7 @@ const People: CollectionConfig = {
       name: "lastName",
       label: "last name",
       type: "text",
-      required: true,
+      required: false,
     },
   ],
 };
