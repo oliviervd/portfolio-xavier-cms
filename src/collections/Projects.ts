@@ -9,7 +9,7 @@ import People from "./People";
 const Project: CollectionConfig = {
   slug: "project",
   admin: {
-    useAsTitle: "projectTitle",
+    useAsTitle: "projectInformation.projectTitle",
   },
   access: {
     read: () => true,
@@ -21,14 +21,16 @@ const Project: CollectionConfig = {
     contentStatus,
     lastUpdated,
     {
+      name: "projectTitle",
+      label: "title (project)",
+      type: "text",
+      required: true,
+    },
+
+    {
       type: "group",
       name: "projectInformation",
       fields: [
-        {
-          name: "projectTitle",
-          type: "text",
-          required: true,
-        },
         projectCategory,
         {
           name: "description",
