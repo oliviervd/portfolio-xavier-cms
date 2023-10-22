@@ -5,6 +5,12 @@ const Tags: CollectionConfig = {
   admin: {
     useAsTitle: "tag",
   },
+  access: {
+    read: () => true,
+    update: () => true,
+    create: () => true,
+    delete: () => true,
+  },
   fields: [
     {
       name: "tag",

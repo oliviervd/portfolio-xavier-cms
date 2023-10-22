@@ -2,6 +2,15 @@ import { CollectionConfig } from "payload/types";
 
 const People: CollectionConfig = {
   slug: "people",
+  admin: {
+    useAsTitle: "firstName",
+  },
+  access: {
+    read: () => true,
+    create: () => true,
+    update: () => true,
+    delete: () => true,
+  },
   fields: [
     {
       name: "firstName",
