@@ -60,6 +60,7 @@ const Media: CollectionConfig = {
       type: "text",
     },
   ],
+  /*
   hooks: {
     beforeValidate: [
       (req): void => {
@@ -72,6 +73,7 @@ const Media: CollectionConfig = {
       },
     ],
   },
+  */
 };
 
 export default Media;
