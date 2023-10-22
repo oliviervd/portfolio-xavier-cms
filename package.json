@@ -1,6 +1,6 @@
 {
   "name": "xavier-portfolio-cms",
-  "description": "A blank template to get started with Payload",
+  "description": "Content management system for portfolio Xavier Van D'huynslager",
   "version": "1.0.0",
   "main": "dist/server.js",
   "license": "MIT",
@@ -29,8 +29,7 @@
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "payload": "^2.0.0",
-    "sharp": "^0.32.6"
+    "payload": "^2.0.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",
