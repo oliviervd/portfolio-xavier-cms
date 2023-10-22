@@ -24,13 +24,7 @@ export default buildConfig({
     url: process.env.DATABASE_URI,
   }), // or postgresAdapter({}),
   editor: slateEditor({}),
-  collections: [
-    Users,
-    Media,
-    //People,
-    //Project,
-    //Tags
-  ],
+  collections: [Users, Media, People, Project, Tags],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
@@ -43,7 +37,7 @@ export default buildConfig({
         media: {
           adapter: s3Adapter({
             config: {
-              //endpoint: process.env.S3_ENDPOINT,
+              endpoint: process.env.S3_ENDPOINT,
               region: process.env.S3_REGION,
               credentials: {
                 accessKeyId: process.env.S3_ACCESS_KEY_ID,
