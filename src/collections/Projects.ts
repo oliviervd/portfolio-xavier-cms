@@ -38,6 +38,11 @@ const Project: CollectionConfig = {
           label: "Project description",
         },
         {
+          name: "techspecs",
+          type: "richText",
+          label: "technical specs",
+        },
+        {
           name: "tags",
           hasMany: true,
           type: "relationship",
@@ -53,8 +58,8 @@ const Project: CollectionConfig = {
               relationTo: "people",
             },
             {
-              name: "producedByPerson",
-              label: "produced by (person)",
+              name: "producedBy",
+              label: "produced by",
               type: "relationship",
               relationTo: "people",
             },
