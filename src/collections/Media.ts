@@ -10,17 +10,10 @@ const Media: CollectionConfig = {
     staticURL: "/media",
     staticDir: "media",
     disableLocalStorage: true,
-
     imageSizes: [
       {
         name: "mobileThumbnail",
         width: 360,
-        height: undefined,
-        position: "centre",
-      },
-      {
-        name: "card",
-        width: 768,
         height: undefined,
         position: "centre",
       },
