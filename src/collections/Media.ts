@@ -11,8 +11,6 @@ const Media: CollectionConfig = {
     staticDir: "media",
     disableLocalStorage: true,
 
-    /*
-
     imageSizes: [
       {
         name: "mobileThumbnail",
@@ -37,7 +35,7 @@ const Media: CollectionConfig = {
         width: undefined,
         height: undefined,
       },
-    ], */
+    ],
   },
   access: {
     read: () => true,
