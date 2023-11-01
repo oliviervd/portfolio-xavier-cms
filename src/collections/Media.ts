@@ -23,11 +23,6 @@ const Media: CollectionConfig = {
         height: undefined,
         position: "centre",
       },
-      {
-        name: "original",
-        width: undefined,
-        height: undefined,
-      },
     ],
   },
   access: {
