@@ -9,7 +9,7 @@ import People from "./People";
 const Project: CollectionConfig = {
   slug: "project",
   admin: {
-    useAsTitle: "projectInformation.projectTitle",
+    useAsTitle: "projectTitle",
   },
   access: {
     read: () => true,
