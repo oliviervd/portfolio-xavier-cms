@@ -10,6 +10,9 @@ const Media: CollectionConfig = {
     staticURL: "/media",
     staticDir: "media",
     disableLocalStorage: true,
+    adminThumbnail: ({ doc }) =>
+      `https://p01--admin--jh7ls6pxcdjh.code.run/media/${doc.filename}`,
+    mimeTypes: ["image/*"],
     /*
     imageSizes: [
       {
