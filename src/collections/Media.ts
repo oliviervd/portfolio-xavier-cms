@@ -13,6 +13,7 @@ const Media: CollectionConfig = {
     adminThumbnail: ({ doc }) =>
       `https://p01--admin--jh7ls6pxcdjh.code.run/media/${doc.filename}`,
     mimeTypes: ["image/*"],
+    /*
     imageSizes: [
       {
         name: "mobileThumbnail",
@@ -33,6 +34,7 @@ const Media: CollectionConfig = {
         position: "centre",
       },
     ],
+    */
   },
   access: {
     read: () => true,

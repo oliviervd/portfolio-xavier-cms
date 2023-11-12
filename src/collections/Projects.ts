@@ -95,6 +95,19 @@ const Project: CollectionConfig = {
     },
 
     {
+      name: "gallery",
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "upload",
+          relationTo: "media",
+          required: false,
+        },
+      ],
+    },
+
+    {
       type: "group",
       label: "media",
       name: "mediaGroup",
