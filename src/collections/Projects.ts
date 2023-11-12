@@ -88,28 +88,17 @@ const Project: CollectionConfig = {
       ],
     },
     {
+      name: "images",
+      label: "image viewer (collection of stills)",
+      type: "relationship",
+      relationTo: "media",
+    },
+
+    {
       type: "group",
       label: "media",
       name: "mediaGroup",
       fields: [
-        {
-          // images
-          type: "row",
-          fields: [
-            {
-              name: "images",
-              label: "image viewer (collection of stills)",
-              type: "relationship",
-              relationTo: "media",
-            },
-            {
-              name: "thumbnail",
-              label: "main image",
-              type: "relationship",
-              relationTo: "media",
-            },
-          ],
-        },
         {
           // MEDIA URIS
           type: "row",
