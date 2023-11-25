@@ -131,12 +131,14 @@ const Project: CollectionConfig = {
               name: "vimeoURI",
               label: "vimeo ID",
               type: "text",
+              hasMany: true,
             },
             {
               // youtube
               name: "youtubeURI",
               label: "Youtube ID",
               type: "text",
+              hasMany: true,
             },
           ],
         },
