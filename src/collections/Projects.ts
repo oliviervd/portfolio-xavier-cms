@@ -4,7 +4,6 @@ import contentStatus from "../fields/contentStatus";
 import projectCategory from "../fields/postCategory";
 import lastUpdated from "../fields/lastUpdated";
 import projectStatus from "../fields/projectStatus";
-import People from "./People";
 
 const Project: CollectionConfig = {
   slug: "project",
@@ -120,35 +119,33 @@ const Project: CollectionConfig = {
     {
       type: "group",
       label: "media",
+      admin: {
+        description:
+          "add extarnal media links (first item in the gallery will serve as the main item",
+      },
       name: "mediaGroup",
       fields: [
         {
-          // MEDIA URIS
-          type: "row",
+          name: "vimeo",
+          type: "array",
           fields: [
             {
-              name: "vimeo",
-              type: "array",
-              fields: [
-                {
-                  // vimeo
-                  name: "vimeoURI",
-                  label: "vimeo ID",
-                  type: "text",
-                },
-              ],
+              // vimeo
+              name: "vimeoURI",
+              label: "vimeo ID",
+              type: "text",
             },
+          ],
+        },
+        {
+          name: "youtube",
+          type: "array",
+          fields: [
             {
-              name: "youtube",
-              type: "array",
-              fields: [
-                {
-                  // youtube
-                  name: "youtubeURI",
-                  label: "Youtube ID",
-                  type: "text",
-                },
-              ],
+              // youtube
+              name: "youtubeURI",
+              label: "Youtube ID",
+              type: "text",
             },
           ],
         },
