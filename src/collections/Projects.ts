@@ -21,6 +21,16 @@ const Project: CollectionConfig = {
     contentStatus,
     lastUpdated,
     {
+      name: "highlight",
+      label: "highlight",
+      type: "checkbox",
+      admin: {
+        position: "sidebar",
+        description:
+          "select if this project is shown on the mobile UI as a highlight",
+      },
+    },
+    {
       name: "projectTitle",
       label: "title (project)",
       type: "text",
