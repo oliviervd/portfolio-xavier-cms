@@ -127,18 +127,28 @@ const Project: CollectionConfig = {
           type: "row",
           fields: [
             {
-              // vimeo
-              name: "vimeoURI",
-              label: "vimeo ID",
-              type: "text",
-              hasMany: true,
+              name: "vimeo",
+              type: "array",
+              fields: [
+                {
+                  // vimeo
+                  name: "vimeoURI",
+                  label: "vimeo ID",
+                  type: "text",
+                },
+              ],
             },
             {
-              // youtube
-              name: "youtubeURI",
-              label: "Youtube ID",
-              type: "text",
-              hasMany: true,
+              name: "youtube",
+              type: "array",
+              fields: [
+                {
+                  // youtube
+                  name: "youtubeURI",
+                  label: "Youtube ID",
+                  type: "text",
+                },
+              ],
             },
           ],
         },
