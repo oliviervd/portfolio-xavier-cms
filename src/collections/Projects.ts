@@ -97,8 +97,12 @@ const Project: CollectionConfig = {
       ],
     },
     {
-      name: "images",
-      label: "image viewer (collection of stills)",
+      name: "heroImage",
+      label: "main media",
+      admin: {
+        description:
+          "image to be shown as placeholder when browsing portfolio.",
+      },
       type: "relationship",
       relationTo: "media",
     },
@@ -106,6 +110,9 @@ const Project: CollectionConfig = {
     {
       name: "gallery",
       type: "array",
+      admin: {
+        description: "collection of images that will be shown in the gallery",
+      },
       fields: [
         {
           name: "image",
