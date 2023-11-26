@@ -50,6 +50,14 @@ export default buildConfig({
   ],
   serverURL: process.env.PAYLOAD_URL,
   // CORS
-  cors: ["http://localhost:3000", "https://p01--admin--jh7ls6pxcdjh.code.run/", "https://portfolio-xvd.vercel.app"],
-  csrf: ["http://localhost:3000", "https://p01--admin--jh7ls6pxcdjh.code.run/", "https://portfolio-xvd.vercel.app"],
+  cors: [
+    "http://localhost:3000",
+    "https://p01--admin--jh7ls6pxcdjh.code.run/",
+    "https://portfolio-xvd.vercel.app",
+  ],
+  csrf: [
+    "http://localhost:3000",
+    "https://p01--admin--jh7ls6pxcdjh.code.run/",
+    "https://portfolio-xvd.vercel.app",
+  ],
 });
